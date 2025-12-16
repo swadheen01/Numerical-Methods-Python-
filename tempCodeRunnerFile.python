@@ -1,0 +1,16 @@
+#
+#Copyright (c) Swadheen Islam Robi (SIR01)
+#Created on Tue Oct 28 2025 4:13:30 PM
+#
+import matplotlib as plt
+x = [1,2,3,4]
+y = [4,5,7,8]
+n = len(x)
+q = 2.5
+for i in range (n-1):
+    if q>=x[i] and q<=x[i+1]:
+        s = y[i] + (y[i+1]-y[i])/(x[i+1]-x[i])*(q-x[i])
+
+print(s)
+plt.plot(x)
+plt.show()
